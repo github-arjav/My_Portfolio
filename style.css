@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .page1{
     position: relative;
     width: 100%;
@@ -47,6 +51,9 @@ a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-right: 50px;
+    font-size: 20px;
+    vertical-align: middle;
 }
 
 nav ul li a:hover{
@@ -55,8 +62,6 @@ nav ul li a:hover{
 
 .Home{
     margin-left: 8%;
-    /* margin-top: 6.5%; */
-    text-align: center;
 }
 
 .Home h3{
@@ -72,10 +77,21 @@ nav ul li a:hover{
     font-weight: bolder;
 }
 
+.Home h1{
+    margin-left: 200px;
+    font-size: 40px;
+}
+
 .Home p{
     padding-top: 2%;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
+    margin-left: 200px;
+}
+
+.Home a{
+    margin-left: 180px;
+    
 }
 
 .page2{
@@ -111,7 +127,7 @@ nav ul li a:hover{
 }
 
 .Contact form input{
-    width: 300px;
+    width: 500px;
     height: 40px;
     margin-top: 5px;
 }
@@ -132,7 +148,7 @@ form input::placeholder{
 
 form textarea{
     background: black;
-    width: 300px;
+    width: 500px;
     margin-top: 5px;
     border-color: white;
     border-radius: 2%;
@@ -159,4 +175,16 @@ input[type=button]:hover{
     background:#FFFAF0;
     color: #CC0000;
     cursor: pointer;
+}
+
+.links{
+    margin-top: 50px;
+}
+
+.links a img{
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
