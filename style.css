@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 html{
@@ -82,16 +83,19 @@ nav ul li a:hover{
     font-size: 40px;
 }
 
-.Home p{
-    padding-top: 2%;
-    font-weight: bold;
-    font-size: 25px;
-    margin-left: 200px;
+.myName{
+    color: red;
+    position: relative;
 }
+
+/* .Home h1 span:hover{
+    top: -5px;
+    cursor:grab;
+} */
 
 .Home a{
     margin-left: 180px;
-    
+
 }
 
 .page2{
@@ -102,6 +106,64 @@ nav ul li a:hover{
     position:relative;
 }
 
+.columns{
+  float: left;
+  width: 50%;
+  margin-top: 100px;
+}
+
+.columns img{
+    height: 20%; 
+    width: 20%; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.columns img:hover{
+    transition: 0.5s;
+    transform: scale(111.5%);
+}
+
+.Resume{
+    height: 50px;
+    width: 200px;
+    background: #0000CC;
+    color: white;
+    border-radius: 15px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+.Resume:hover{
+    background: none;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.5s;
+    border: none;
+}
+
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skill{
+    text-align: right;
+    color: black;
+    vertical-align: middle;
+}
+
+.cpp {width: 90%; background-color: #04AA6D; height: 10px;}
+.py {width: 70%; background-color: #04AA6D; height: 10px;}
+.ps {width: 60%; background-color: #04AA6D; height: 10px;}
+.git {width: 80%; background-color: #04AA6D; height: 10px;}
+.webd {width: 85%; background-color: #04AA6D; height: 10px;}
+.ros {width: 90%; background-color: #04AA6D; height: 10px;}
 
 .page3{
     position: relative;
@@ -109,7 +171,96 @@ nav ul li a:hover{
     height: 100vh;
     background: #eff4fd;
     position:relative;
-    
+}
+
+.divide{
+    float: left;
+    width: 30%;
+    margin-top: 100px;
+}
+
+.divide .tictactoe{
+    height: 450px;
+    width: 450px;
+    background: red;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.tictactoe:hover{
+    background: #202020;
+    color: #FFFAF0;
+    transition: 0.4s;
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+.tictactoe h1{
+    font-size: 35px;
+    font-weight:bolder;
+    text-decoration: underline;
+}
+
+.tictactoe p{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.divide .travel{
+    height: 450px;
+    width: 450px;
+    background: red;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.travel:hover{
+    background: #202020;
+    color: #FFFAF0;
+    transition: 0.4s;
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+.travel h1{
+    font-size: 35px;
+    font-weight:bolder;
+    text-decoration: underline;
+}
+
+.travel p{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.divide .primeplayer{
+    height: 450px;
+    width: 450px;
+    background: red;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.primeplayer:hover{
+    background: #202020;
+    color: #FFFAF0;
+    transition: 0.4s;
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+.primeplayer h1{
+    font-size: 35px;
+    font-weight:bolder;
+    text-decoration: underline;
+}
+
+.primeplayer p{
+    font-size: 25px;
+    padding: 20px;
 }
 
 .page4{
@@ -134,7 +285,7 @@ nav ul li a:hover{
 
 form input{
     background: black;
-    border-color: white;
+    border: none;
     border-radius: 2%;
     color: white;
     padding: 10px 15px;
@@ -150,7 +301,7 @@ form textarea{
     background: black;
     width: 500px;
     margin-top: 5px;
-    border-color: white;
+    border: none;
     border-radius: 2%;
     color: white;
     padding: 10px 15px;
@@ -166,15 +317,22 @@ textarea::placeholder{
 form input[type=button]{
     background: black;
     color: white;
-    border: 2px solid white;
+    border: none;
+    height: 50px;
+    width: 300px;
     border-radius: 20px;
     margin-top: 50px;
+    transition: 0.3s;
 }
 
 input[type=button]:hover{
-    background:#FFFAF0;
+    background: none;
+    border: solid white;
     color: #CC0000;
     cursor: pointer;
+    font-size: 25px;
+    transform: scale(115%);
+    transition: 0.3s;
 }
 
 .links{
@@ -187,4 +345,10 @@ input[type=button]:hover{
     padding: 20px;
     padding-left: 100px;
     padding-right: 100px;
+}
+
+.links a img:hover{
+    cursor: pointer;
+    transform: scale(120%);
+    transition: 0.3s;
 }

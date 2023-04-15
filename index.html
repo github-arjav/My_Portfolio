@@ -11,7 +11,7 @@
     <div class="page1">
         <nav>
             <ul>
-                <li><a href="#"><img src="assets/portfolio.png" alt="icon" style="height: 40px;"></a></li>  
+                <li><a href="#"><img src="assets/portfolio.png" alt="icon" style="height: 40px; border: none;"></a></li>  
                 <li><a href="#Home" style="margin-left: 900px ;">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Projects">Projects</a></li>
@@ -20,33 +20,86 @@
         </nav>
         <div class="Home" id="Home">
             <h3>Welcome to my mini <span>Portfolio.</span></h3>
-            <h1>Hello, I'm <span style="color: red;">ARJAV JAIN</span></h1>
-            <p>I am a Programmer. <br> I am a Web Developer.</p>
+            <h1>Hello, I'm <span class="myName">ARJAV JAIN</span></h1>
+            
+
             <br><br>
-            <a href="https://drive.google.com/file/d/1UgFOWNB87IADK77PZ9R2sbfrLw5uSXgD/view?usp=sharing" target="_blank">Check out my <strong style="font-style: italic; color: rgb(21, 153, 109);">Resume</strong></a>
+            <!-- <a href="https://drive.google.com/file/d/1c2sMrhB0uMJG45803Kk_LW47NvRnldRU/view?usp=sharing" target="_blank">Check out my <strong style="font-style: italic; color: rgb(21, 153, 109);">Resume</strong></a> -->
         </div>
     </div>
 
     <div class="page2">
-        <div class="About" id="About" style="text-align: center;">
-            <h1 style="padding-top: 10%;">ABOUT</h1>
-            <h2>_______</h2>
-            <p style="margin: 60px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae unde repudiandae voluptatem, a mollitia quam nulla eveniet id voluptate minus culpa sunt officia ut eius vel, consequuntur temporibus vero velit.</p>
+        <div class="About" id="About" >
+            <h1 style="padding-top: 10%;text-align: center;">ABOUT</h1>
+            <h2 style="text-align: center; font-weight: 500;">_____</h2>
+            <div class="columns" style="text-align: center;">
+                <img src="assets/Photo.jpg" alt="profile">
+                <p style="text-align: justify; width: 85%; margin-left: 30px; margin-top: 30px; font-size: 20px; text-align: center;">
+                    Hello and welcome to my mini portfolio! I am Arjav Jain, an aspiring web developer with a strong ability to self-start and collaborate effectively. Currently pursuing a B.Tech degree from Jaypee University of Engineering and Technology, Guna, I have gained valuable experience in various fields, including Data Science, Problem Solving, Android Development, Robot Operating System (ROS), and of course, Web Development.
+                </p>
+                <button class="Resume" onclick="window.open('https://drive.google.com/file/d/1c2sMrhB0uMJG45803Kk_LW47NvRnldRU/view?usp=sharing','_blank'   )">Check out my Resume</button>
+            </div>
+            <div class="columns">
+                <h3 style="margin-left: 30px; text-align: center; font-size: 35px; color: red; text-decoration: underline;">Skills</h3>
+                <p style="margin-top: 50px;">C/C++ <span style="margin-left: 82%;">90%</span></p>
+                <div class="container">
+                    <div class="skill cpp"></div>
+                </div><br><br>
+                <p>Python <span style="margin-left: 62%;">70%</span></p>
+                <div class="container">
+                    <div class="skill py"></div>
+                </div><br><br>
+                <p>Problem Solving <span style="margin-left: 45%;">60%</span></p>
+                <div class="container">
+                    <div class="skill ps"></div>
+                </div><br><br>
+                <p>Git & Github <span style="margin-left: 67.5%;">80%</span></p>
+                <div class="container">
+                    <div class="skill git"></div>
+                </div><br><br>
+                <p>Web Development <span style="margin-left: 68%;">85%</span></p>
+                <div class="container">
+                    <div class="skill webd"></div>
+                </div><br><br>
+                <p>ROS (Robot Operating System) <span style="margin-left: 65%;">90%</span></p>
+                <div class="container">
+                    <div class="skill ros"></div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="page3">
-        <div class="Projects" id="Projects" style="text-align: center;">
-            <h1 style="padding-top: 10%;">PROJECTS</h1>
-            <h2>_______</h2>
-            <p style="margin: 60px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae unde repudiandae voluptatem, a mollitia quam nulla eveniet id voluptate minus culpa sunt officia ut eius vel, consequuntur temporibus vero velit.</p>
+        <div class="Projects" id="Projects">
+            <h1 style="padding-top: 10%; text-align: center;">PROJECTS</h1>
+            <h2 style="font-weight: 500; text-align: center;">_______</h2>
+            <div class="divide" style="margin-left: 5%; text-align: center;">
+                <button class="tictactoe" onclick="window.open('https://github.com/github-arjav/Tic_Tac_Toe','_blank')">
+                    <h1>Tic-Tac-Toe</h1>
+                    <p>A Tic-Tac-Toe game developed for android mobiles using Android Studio and with the use of JAVA.</p>
+                </button>
+            </div>
+
+            <div class="divide" style="text-align: center;">
+                <button class="travel" onclick="window.open('https://github.com/github-arjav/travel-website','_blank')">
+                    <h1>Travel.</h1>
+                    <p>A responsive webiste frontend part of a website having informationabout the famous travelling places, travelling packages and tools required for that adventures journey.<p>
+                </button>
+            </div>
+
+            <div class="divide" style="text-align: center;">
+                <button class="primeplayer" onclick="window.open('https://github.com/github-arjav/Prime-Player','_blank')">
+                    <h1>Prime Player</h1>
+                    <p>A movies, web series and T.V Shows straming platfrom designed and developed for android mobiles using Android Studio and JAVA. <br> This app fetches and plays the movie form firebase.</p>
+                </button>
+            </div>
         </div>
     </div>
 
     <div class="page4">
         <div class="Contact" id="Contact" style="text-align: center;">
             <h1 style="padding-top: 10%;">CONTACT ME</h1>
-            <h2>____________</h2>
+            <h2 style="font-weight: 500;">____________</h2>
             <h4>Want to ask something or want to contact?</h4>
             <form>
                 <input type="text" id="name" placeholder="Your Name" required>
