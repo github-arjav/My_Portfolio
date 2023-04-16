@@ -88,14 +88,39 @@ nav ul li a:hover{
     position: relative;
 }
 
-/* .Home h1 span:hover{
-    top: -5px;
-    cursor:grab;
-} */
+.Home h4{
+    margin-top: 30px;
+    margin-left: 250px;
+    font-size: 30px;
+}
+
+.Home h4 span{
+    color: red;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.hire{
+    margin-left: 200px;
+    margin-top: 70px;
+    height: 60px;
+    width: 160px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    transition: 0.3s;
+    font-size: larger;
+}
+
+.hire:hover{
+    cursor: pointer;
+    background: none;
+    color: black;
+    transition: 0.3s;
+}
 
 .Home a{
     margin-left: 180px;
-
 }
 
 .page2{
@@ -148,22 +173,24 @@ nav ul li a:hover{
 
 .container{
     box-sizing: border-box;
-    width: 100%;
-    background-color: #ddd;
+    width: 90%;
+    background-color:rgb(201, 200, 200);
+    border-radius: 0.4rem;
 }
 
 .skill{
     text-align: right;
     color: black;
     vertical-align: middle;
+    border-radius: 0.4rem;
 }
 
-.cpp {width: 90%; background-color: #04AA6D; height: 10px;}
-.py {width: 70%; background-color: #04AA6D; height: 10px;}
-.ps {width: 60%; background-color: #04AA6D; height: 10px;}
+.cpp {width: 90%; background-color: red; height: 10px;}
+.py {width: 70%; background-color: #aa0404; height: 10px;}
+.ps {width: 60%; background-color: blue; height: 10px;}
 .git {width: 80%; background-color: #04AA6D; height: 10px;}
-.webd {width: 85%; background-color: #04AA6D; height: 10px;}
-.ros {width: 90%; background-color: #04AA6D; height: 10px;}
+.webd {width: 85%; background-color: #aa6d04; height: 10px;}
+.ros {width: 90%; background-color: #aa044c; height: 10px;}
 
 .page3{
     position: relative;
@@ -182,22 +209,24 @@ nav ul li a:hover{
 .divide .tictactoe{
     height: 450px;
     width: 450px;
-    background: red;
+    background: #ffa07a;
     text-align: center;
     border-radius: 20px;
     transition: 0.4s;
+    background-image: url(assets/tictaoe.png);
 }
 
 .tictactoe:hover{
-    background: #202020;
+    background: #474444;
     color: #FFFAF0;
     transition: 0.4s;
     transform: scale(110%);
     cursor: pointer;
+    background-image: url(assets/tictactoe-ii.png);
 }
 
 .tictactoe h1{
-    font-size: 35px;
+    font-size: 40px;
     font-weight:bolder;
     text-decoration: underline;
 }
@@ -205,27 +234,33 @@ nav ul li a:hover{
 .tictactoe p{
     font-size: 25px;
     padding: 20px;
+    font-weight: bold;
 }
 
 .divide .travel{
     height: 450px;
     width: 450px;
-    background: red;
+    /* background: red; */
     text-align: center;
     border-radius: 20px;
     transition: 0.4s;
+    background-image: url(assets/travel\(i\).jpg);
+    color: white;
+    opacity: 70%;
 }
 
 .travel:hover{
-    background: #202020;
+    /* background: #202020; */
     color: #FFFAF0;
     transition: 0.4s;
     transform: scale(110%);
     cursor: pointer;
+    background-image: url(assets/travel\(ii\).jpg);
+    opacity: 100%;
 }
 
 .travel h1{
-    font-size: 35px;
+    font-size: 40px;
     font-weight:bolder;
     text-decoration: underline;
 }
@@ -233,6 +268,8 @@ nav ul li a:hover{
 .travel p{
     font-size: 25px;
     padding: 20px;
+    font-weight: bold;
+    opacity: 100%;
 }
 
 .divide .primeplayer{
