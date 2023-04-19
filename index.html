@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Arjav Jain</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="page1">
-         <nav>
+         <div class="nav">
             <ul>
                 <li><a href="#"><img src="assets/portfolio.png" alt="icon" style="height: 40px; border: none;"></a></li>  
                 <li><a href="#Home" style="margin-left: 900px ;">Home</a></li>
@@ -17,12 +17,13 @@
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
         <div class="Home" id="Home">
             <h3>Welcome to my mini <span>Portfolio.</span></h3>
-            <h1>Hello, I'm <span class="myName">ARJAV JAIN</span></h1>
-            <h4>I am a <span>Web Developer & Programmer</span></h4>
-            <button class="hire">Hire Me</button>
+            <p><span class="greeting-type"></span>, my name is<p>
+            <h1 class="myName">ARJAV JAIN</h1>
+            <h4>I am a <span class="typing-text"></span> </h4>
+            <button class="hire" onclick="show_alert()">Hire Me</button>
             <br><br>
         </div>
     </div>
@@ -102,13 +103,16 @@
             <h4>Want to ask something or want to contact?</h4>
             <form>
                 <input type="text" id="name" placeholder="Your Name" required>
-                <br>
                 <input type="email" id="email" placeholder="Your Email" required>
                 <br>
                 <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message(if any)"></textarea>
                 <br>
-                <input type="button" value="Send Me!">
+                <p style="color: white; opacity: 0;">thankyou</p>
+                <input type="button" id="submit" value="Send Me!" onclick="show_msg()">
             </form>
+            <div class="message" id="msg">
+                Thank You for Contacting :)
+            </div>
             <div class="links">
                 <a href="mailto: arjavjain700@gmail.com"><img src="assets/gmail.png" alt="gmail"></a>
                 <a href="https://github.com/github-arjav" target="_blank"><img src="assets/github.png" alt="github" style="height: 60px; width: 60px;"></a>
@@ -119,5 +123,7 @@
             </div>
         </div>
     </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

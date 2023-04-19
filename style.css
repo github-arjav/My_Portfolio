@@ -14,35 +14,30 @@ html{
     height: 100vh;
     background: #eff4fd;
     position:relative;
+    background-image: url(assets/gif.gif);
     
 }
 
-.page1 nav{
-    background-color: black;
-}
-
-nav ul li a{
-    color: white;
-}
-
 .nav{
+    background-color: black;
     display:flex;
-    width: 84%;
     margin: auto;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0px;
-}
-
-nav{
     position: fixed;
     top: 0%;
     width: 100%;
     z-index: 999;
 }
 
-nav ul li{
+
+.nav ul li a{
+    color: white;
+}
+
+.nav ul li{
     display: inline-block;
     list-style: none;
     margin: 20px;
@@ -57,7 +52,7 @@ a{
     vertical-align: middle;
 }
 
-nav ul li a:hover{
+.nav ul li a:hover{
     color: red;
 }
 
@@ -78,30 +73,35 @@ nav ul li a:hover{
     font-weight: bolder;
 }
 
-.Home h1{
-    margin-left: 200px;
-    font-size: 40px;
+.Home p{
+    margin-left: 100px;
+    font-size: 30px;
+    font-style: italic;
 }
 
 .myName{
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 40px;
     color: red;
     position: relative;
+    font-size: 100px;
 }
 
 .Home h4{
     margin-top: 30px;
-    margin-left: 250px;
-    font-size: 30px;
+    margin-left: 175px;
+    font-size: 35px;
 }
 
 .Home h4 span{
-    color: red;
+    color: white;
     font-style: italic;
     font-size: 35px;
 }
 
 .hire{
-    margin-left: 200px;
+    margin-left: 120px;
     margin-top: 70px;
     height: 60px;
     width: 160px;
@@ -315,9 +315,10 @@ nav ul li a:hover{
 }
 
 .Contact form input{
-    width: 500px;
+    width: 250px;
     height: 40px;
     margin-top: 5px;
+    border-radius: 10px;
 }
 
 form input{
@@ -332,6 +333,7 @@ form input{
 form input::placeholder{
     color: white;
     padding-left: 3%;
+    opacity: 0.5;
 }
 
 form textarea{
@@ -343,11 +345,13 @@ form textarea{
     color: white;
     padding: 10px 15px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 textarea::placeholder{
     color: white;
-    padding: 5%
+    padding: 5%;
+    opacity: 0.5;
 }
 
 
@@ -358,7 +362,7 @@ form input[type=button]{
     height: 50px;
     width: 300px;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     transition: 0.3s;
 }
 
@@ -370,6 +374,30 @@ input[type=button]:hover{
     font-size: 25px;
     transform: scale(115%);
     transition: 0.3s;
+}
+
+.message{
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    color: green;
+    font-weight: bold;
+    transition: 0.3s;
+    justify-content: center;
+    animation: buttons 0.3s linear;
+    display: none;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .links{
